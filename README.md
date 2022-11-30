@@ -6,3 +6,4 @@ Starting with
 2. Request Dispatcher
     a. include method
     b. forward method
+3. sendRedirect
