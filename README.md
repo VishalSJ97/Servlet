@@ -7,3 +7,6 @@ Starting with
     a. include method
     b. forward method
 3. sendRedirect
+4. Cookies
+    a. Persistenet
+    b. non persistent
