@@ -10,3 +10,4 @@ Starting with
 4. Cookies
     a. Persistenet
     b. non persistent
+5. HttpSession
