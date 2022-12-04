@@ -11,3 +11,4 @@ Starting with
     a. Persistenet
     b. non persistent
 5. HttpSession
+6. Url Rewriting
