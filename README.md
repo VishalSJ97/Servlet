@@ -7,7 +7,7 @@ Starting with
 When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
 Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
-#DECLARATION
+##DECLARATION
 ```
 public class PrintWriter extends Writer
 
@@ -25,11 +25,11 @@ It is one of the way of servlet collaboration.
 There are two methods defined in the RequestDispatcher interface.
 
 a. include method
-```public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException```
+`public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException`
 	Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.
 
 b. forward method
-```public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException```
+`public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException`
 	Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
 
 
