@@ -3,11 +3,8 @@ Servlet codes
 In this repository I will be using basic which will be required through out the servlet
 Starting with
 1. PrintWriter
-
-When we use System.out.println this statement is used to print on the console
-not on the page so to use it on jsp or html page we use printwriter class
-
-Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
+-When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
+-Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
 DECLARATION
 public class PrintWriter extends Writer
