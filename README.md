@@ -7,12 +7,13 @@ Starting with
 When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
 Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
-DECLARATION
-public class PrintWriter extends Writer
+#DECLARATION
+```public class PrintWriter extends Writer
 
 PrintWriter pw = response.getWriter();
 			OR
 PrintWriter pw = new PrintWriter("Filename.txt");
+```
 
 
 2. Request Dispatcher
@@ -23,11 +24,11 @@ It is one of the way of servlet collaboration.
 There are two methods defined in the RequestDispatcher interface.
 
 a. include method
-public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException
+```public void forward(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException```
 	Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.
 
 b. forward method
-public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException
+```public void include(ServletRequest request,ServletResponse response)throws ServletException,java.io.IOException```
 	Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
 
 
@@ -53,7 +54,6 @@ request.getRequestDispacher("servlet2").forward(request,response);	response.send
 
 A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
-
 	1. Request
 Browser	2. Response + Cookie   Server
 	3. Request + Cookie
@@ -67,16 +67,16 @@ Types of Cookies
  	It is not removed each time when user closes the browser.
  	It is removed only if user logout or signout.
  
-How to create Cookie?
+***How to create Cookie?***
 Cookie ck=new Cookie("user","sonoo jaiswal");
 response.addCookie(ck);
 
-How to delete Cookie?
+***How to delete Cookie?***
 Cookie ck=new Cookie("user","");//deleting value of cookie
 ck.setMaxAge(0);//changing the maximum age to 0 seconds
 response.addCookie(ck);//adding cookie in the response  
  
-How to get Cookies?
+***How to get Cookies?***
 ```Cookie ck[]=request.getCookies();  
 for(int i=0;i<ck.length;i++){  
 	out.print("<br>"+ck[i].getName()+" "+ck[i].getValue());//printing name and value of cookie  
@@ -91,16 +91,16 @@ An object of HttpSession can be used to perform two tasks:
 1. bind objects
 2. view and manipulate information about a session, such as the session identifier, creation time, and last accessed time. 
 
-getting HTTPSession object
-public HttpSession getSession():
+***getting HTTPSession object***
+```public HttpSession getSession():```
 	Returns the current session associated with this request, or if the request does not have a session, creates one.
-public HttpSession getSession(boolean create):
+```public HttpSession getSession(boolean create):```
 	Returns the current HttpSession associated with this request or, if there is no current session and create is true,
  	returns a new session.
 
 Commonly used methods of http Session interface
-public String getId():
-	Returns a string containing the unique identifier value.
+```public String getId():```
+>	Returns a string containing the unique identifier value.
 public long getCreationTime():
 	Returns the time when this session was created, measured in milliseconds since midnight January 1, 1970 GMT.
 public long getLastAccessedTime():
