@@ -42,12 +42,13 @@ So, it can work inside and outside the server.
 
 Difference between forward() and sendRedirect() method
 
-forward() method							sendRedirect() method
-The forward() method works at server side.				The sendRedirect() method works at client side.
-It sends the same request and response objects to another servlet.	It always sends a new request.
-It can work within the server only.					It can be used within and outside the server.
-Example:								Example: 
-request.getRequestDispacher("servlet2").forward(request,response);	response.sendRedirect("servlet2");
+forward() method|sendRedirect() method
+----------------|---------------------
+The forward() method works at server side.|The sendRedirect() method works at client side.
+It sends the same request and response objects to another servlet.|always sends a new request.
+It can work within the server only.|It can be used within and outside the server.
+Example:					Example: 
+request.getRequestDispacher("servlet2").forward(request,response);|response.sendRedirect("servlet2");
 
 
 4. Cookies
