@@ -3,8 +3,9 @@ Servlet codes
 In this repository I will be using basic which will be required through out the servlet
 Starting with
 1. PrintWriter
--When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
--Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
+
+When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
+Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
 DECLARATION
 public class PrintWriter extends Writer
@@ -40,11 +41,11 @@ So, it can work inside and outside the server.
 
 Difference between forward() and sendRedirect() method
 
-forward() method														sendRedirect() method
-The forward() method works at server side.							The sendRedirect() method works at client side.
+forward() method							sendRedirect() method
+The forward() method works at server side.				The sendRedirect() method works at client side.
 It sends the same request and response objects to another servlet.	It always sends a new request.
-It can work within the server only.									It can be used within and outside the server.
-Example:																Example: 
+It can work within the server only.					It can be used within and outside the server.
+Example:								Example: 
 request.getRequestDispacher("servlet2").forward(request,response);	response.sendRedirect("servlet2");
 
 
@@ -53,18 +54,18 @@ request.getRequestDispacher("servlet2").forward(request,response);	response.send
 A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
 
-			1. Request
+	1. Request
 Browser	2. Response + Cookie   Server
-			3. Request + Cookie
+	3. Request + Cookie
  
 Types of Cookies
     a. Non-persistent cookie
-		It is valid for single session only.
-		It is removed each time when user closes the browser.
+	It is valid for single session only.
+	It is removed each time when user closes the browser.
     b. Persistent cookie
- 		It is valid for multiple session.
- 		It is not removed each time when user closes the browser.
- 		It is removed only if user logout or signout.
+ 	It is valid for multiple session.
+ 	It is not removed each time when user closes the browser.
+ 	It is removed only if user logout or signout.
  
 How to create Cookie?
 Cookie ck=new Cookie("user","sonoo jaiswal");
@@ -76,11 +77,11 @@ ck.setMaxAge(0);//changing the maximum age to 0 seconds
 response.addCookie(ck);//adding cookie in the response  
  
 How to get Cookies?
-Cookie ck[]=request.getCookies();  
+```Cookie ck[]=request.getCookies();  
 for(int i=0;i<ck.length;i++){  
 	out.print("<br>"+ck[i].getName()+" "+ck[i].getValue());//printing name and value of cookie  
 }
-
+```
 
 5. HttpSession
 
