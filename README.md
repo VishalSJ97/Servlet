@@ -8,7 +8,8 @@ When we use System.out.println this statement is used to print on the console no
 Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
 #DECLARATION
-```public class PrintWriter extends Writer
+```
+public class PrintWriter extends Writer
 
 PrintWriter pw = response.getWriter();
 			OR
@@ -47,7 +48,7 @@ forward() method|sendRedirect() method
 The forward() method works at server side.|The sendRedirect() method works at client side.
 It sends the same request and response objects to another servlet.|always sends a new request.
 It can work within the server only.|It can be used within and outside the server.
-Example:					Example: 
+Example:|Example: 
 request.getRequestDispacher("servlet2").forward(request,response);|response.sendRedirect("servlet2");
 
 
@@ -55,9 +56,9 @@ request.getRequestDispacher("servlet2").forward(request,response);|response.send
 
 A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
-	1. Request
-Browser	2. Response + Cookie   Server
-	3. Request + Cookie
+>	 1. Request
+>Browser 2. Response + Cookie   Server
+>	 3. Request + Cookie
  
 Types of Cookies
     a. Non-persistent cookie
