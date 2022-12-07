@@ -3,10 +3,11 @@ Servlet codes
 In this repository I will be using basic which will be required through out the servlet
 Starting with
 1. PrintWriter\
+
 	When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
 Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
-##DECLARATION
+DECLARATION
 ```
 public class PrintWriter extends Writer
 
@@ -16,8 +17,8 @@ PrintWriter pw = new PrintWriter("Filename.txt");
 ```
 
 
-2. Request Dispatcher
-
+2. Request Dispatcher\
+ 
 The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. 
 This interface can also be used to include the content of another resource also. 
 It is one of the way of servlet collaboration.
