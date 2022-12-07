@@ -35,7 +35,7 @@ There are two methods defined in the RequestDispatcher interface.
 
 3. sendRedirect
 
-The sendRedirect() method of HttpServletResponse interface can be used to redirect response to another resource,
+	The sendRedirect() method of HttpServletResponse interface can be used to redirect response to another resource,
 it may be servlet, jsp or html file.
 It accepts relative as well as absolute URL.
 It works at client side because it uses the url bar of the browser to make another request.
@@ -54,30 +54,30 @@ request.getRequestDispacher("servlet2").forward(request,response);|response.send
 
 4. Cookies
 
-A cookie is a small piece of information that is persisted between the multiple client requests.
+	A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
 >	 1. Request
->Browser 2. Response + Cookie   Server
+> Browser 2. Response + Cookie   Server
 >	 3. Request + Cookie
  
 Types of Cookies
-    a. Non-persistent cookie
+    * Non-persistent cookie
 	It is valid for single session only.
 	It is removed each time when user closes the browser.
-    b. Persistent cookie
+    * Persistent cookie
  	It is valid for multiple session.
  	It is not removed each time when user closes the browser.
  	It is removed only if user logout or signout.
  
 ***How to create Cookie?***
-Cookie ck=new Cookie("user","sonoo jaiswal");
+```Cookie ck=new Cookie("user","sonoo jaiswal");
 response.addCookie(ck);
-
+```
 ***How to delete Cookie?***
-Cookie ck=new Cookie("user","");//deleting value of cookie
+```Cookie ck=new Cookie("user","");//deleting value of cookie
 ck.setMaxAge(0);//changing the maximum age to 0 seconds
 response.addCookie(ck);//adding cookie in the response  
- 
+``` 
 ***How to get Cookies?***
 ```Cookie ck[]=request.getCookies();  
 for(int i=0;i<ck.length;i++){  
@@ -87,7 +87,7 @@ for(int i=0;i<ck.length;i++){
 
 5. HttpSession
 
-In such case, container creates a session id for each user.
+	In such case, container creates a session id for each user.
 The container uses this id to identify the particular user.
 An object of HttpSession can be used to perform two tasks:
 1. bind objects
