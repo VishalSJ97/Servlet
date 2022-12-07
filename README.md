@@ -58,9 +58,11 @@ ___
 	A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
 
-1-Request
-Browser 2-Response + Cookie   Server
-3-Request + Cookie
+		1-Request			//step 1 browser send request to servet
+		
+	Browser 2-Response + Cookie   Server	//step 2 server sends response with cookies
+	
+		3-Request + Cookie		//step 3 browser sends another request with cookies
 
 
 Types of Cookies
