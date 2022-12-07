@@ -57,9 +57,9 @@ request.getRequestDispacher("servlet2").forward(request,response);|response.send
 
 	A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
->	  1. Request
-> Browser 2. Response + Cookie   Server
->	  3. Request + Cookie
+`	1. Request
+ Browser 2. Response + Cookie   Server
+	3. Request + Cookie`
  
 Types of Cookies
     * Non-persistent cookie
