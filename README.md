@@ -2,7 +2,8 @@
 Servlet codes
 In this repository I will be using basic which will be required through out the servlet
 Starting with
-*1. PrintWriter*
+
+1. PrintWriter
 
 	When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
 Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
@@ -17,7 +18,7 @@ PrintWriter pw = new PrintWriter("Filename.txt");
 ```
 
 
-*2. Request Dispatcher*
+2. Request Dispatcher
  
 	The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. 
 This interface can also be used to include the content of another resource also. 
@@ -33,7 +34,7 @@ There are two methods defined in the RequestDispatcher interface.
 	Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
 
 
-*3. sendRedirect*
+3. sendRedirect
 
 	The sendRedirect() method of HttpServletResponse interface can be used to redirect response to another resource,
 it may be servlet, jsp or html file.
@@ -52,17 +53,16 @@ Example:|Example:
 request.getRequestDispacher("servlet2").forward(request,response);|response.sendRedirect("servlet2");
 
 
-*4. Cookies*
+4. Cookies
 
 	A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
->	 1. Request
+>	  1. Request
 > Browser 2. Response + Cookie   Server
->	 3. Request + Cookie
+>	  3. Request + Cookie
  
 Types of Cookies
     * Non-persistent cookie
-	It is valid for single session only.
 	It is removed each time when user closes the browser.
     * Persistent cookie
  	It is valid for multiple session.
@@ -85,13 +85,13 @@ for(int i=0;i<ck.length;i++){
 }
 ```
 
-*5. HttpSession*
+5. HttpSession
 
 	In such case, container creates a session id for each user.
 The container uses this id to identify the particular user.
 An object of HttpSession can be used to perform two tasks:
-* bind objects
-* view and manipulate information about a session, such as the session identifier, creation time, and last accessed time. 
+	* bind objects
+	* view and manipulate information about a session, such as the session identifier, creation time, and last accessed time. 
 
 ***getting HTTPSession object***
 
@@ -118,7 +118,7 @@ An object of HttpSession can be used to perform two tasks:
 	Invalidates this session then unbinds any objects bound to it.
     
     
-*6. Url Rewriting*
+6. Url Rewriting
 
 	In URL rewriting, we append a token or identifier to the URL of the next Servlet or the next resource. 
 We can send parameter name/value pairs using the following format:
