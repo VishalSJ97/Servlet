@@ -94,8 +94,10 @@ An object of HttpSession can be used to perform two tasks:
 * view and manipulate information about a session, such as the session identifier, creation time, and last accessed time. 
 
 ***getting HTTPSession object***
+
 ```public HttpSession getSession():```
 	Returns the current session associated with this request, or if the request does not have a session, creates one.
+
 ```public HttpSession getSession(boolean create):```
 	Returns the current HttpSession associated with this request or, if there is no current session and create is true,
  	returns a new session.
@@ -104,16 +106,20 @@ Commonly used methods of http Session interface
 
 ```public String getId():```
 	Returns a string containing the unique identifier value.
+
 ```public long getCreationTime():```
 	Returns the time when this session was created, measured in milliseconds since midnight January 1, 1970 GMT.
+
 ```public long getLastAccessedTime():```
 	Returns the last time the client sent a request associated with this session,
 	as the number of milliseconds since midnight January 1, 1970 GMT.
+
 ```public void invalidate():```
 	Invalidates this session then unbinds any objects bound to it.
     
     
 6. Url Rewriting
+
 	In URL rewriting, we append a token or identifier to the URL of the next Servlet or the next resource. 
 We can send parameter name/value pairs using the following format:
 url?name1=value1&name2=value2&??
@@ -121,11 +127,9 @@ A name and a value is separated using an equal = sign,
 a parameter name/value pair is separated from another parameter using the ampersand(&).
 When the user clicks the hyperlink, the parameter name/value pairs will be passed to the server.
 From a Servlet, we can use getParameter() method to obtain a parameter value.
-
-Advantage of URL Rewriting
+	1. Advantage of URL Rewriting
 	* It will always work whether cookie is disabled or not (browser independent).
 	* Extra form submission is not required on each pages.
-
-Disadvantage of URL Rewriting
+	2. Disadvantage of URL Rewriting
 	* It will work only with links.
 	* It can send Only textual information.
