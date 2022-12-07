@@ -4,11 +4,11 @@ In this repository I will be using basic which will be required through out the 
 Starting with
 
 1. PrintWriter
-
+___
 	When we use System.out.println this statement is used to print on the console not on the page so to use it on jsp or html page we use printwriter class
 Java PrintWriter class is the implementation of Writer class. It is used to print the formatted representation of objects to the text-output stream.
 
-DECLARATION
+# DECLARATION
 ```
 public class PrintWriter extends Writer
 
@@ -19,7 +19,7 @@ PrintWriter pw = new PrintWriter("Filename.txt");
 
 
 2. Request Dispatcher
- 
+___ 
 	The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. 
 This interface can also be used to include the content of another resource also. 
 It is one of the way of servlet collaboration.
@@ -57,10 +57,12 @@ request.getRequestDispacher("servlet2").forward(request,response);|response.send
 
 	A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
-```	1. Request
- Browser 2. Response + Cookie   Server
-	3. Request + Cookie```
- 
+
+1-Request
+Browser 2-Response + Cookie   Server
+3-Request + Cookie
+
+
 Types of Cookies
     * Non-persistent cookie
 	It is removed each time when user closes the browser.
