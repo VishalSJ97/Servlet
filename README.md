@@ -21,7 +21,7 @@ PrintWriter pw = new PrintWriter("Filename.txt");
 ___
 2. Request Dispatcher
 ___ 
-	The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. 
+The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. 
 This interface can also be used to include the content of another resource also. 
 It is one of the way of servlet collaboration.
 There are two methods defined in the RequestDispatcher interface.
@@ -37,7 +37,7 @@ There are two methods defined in the RequestDispatcher interface.
 ___
 3. sendRedirect
 ___
-	The sendRedirect() method of HttpServletResponse interface can be used to redirect response to another resource,
+The sendRedirect() method of HttpServletResponse interface can be used to redirect response to another resource,
 it may be servlet, jsp or html file.
 It accepts relative as well as absolute URL.
 It works at client side because it uses the url bar of the browser to make another request.
@@ -56,7 +56,7 @@ request.getRequestDispacher("servlet2").forward(request,response);|response.send
 ___
 4. Cookies
 ___
-	A cookie is a small piece of information that is persisted between the multiple client requests.
+A cookie is a small piece of information that is persisted between the multiple client requests.
 A cookie has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a maximum age and a version number.
 
 		1-Request			//step 1 browser send request to servet
@@ -93,7 +93,7 @@ for(int i=0;i<ck.length;i++){
 ___
 5. HttpSession
 ___
-	In such case, container creates a session id for each user.
+In such case, container creates a session id for each user.
 The container uses this id to identify the particular user.
 An object of HttpSession can be used to perform two tasks:
 	* bind objects
@@ -126,7 +126,7 @@ An object of HttpSession can be used to perform two tasks:
 ___    
 6. Url Rewriting
 ___
-	In URL rewriting, we append a token or identifier to the URL of the next Servlet or the next resource. 
+In URL rewriting, we append a token or identifier to the URL of the next Servlet or the next resource. 
 We can send parameter name/value pairs using the following format:
 url?name1=value1&name2=value2&??
 A name and a value is separated using an equal = sign, 
